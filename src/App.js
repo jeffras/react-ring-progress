@@ -236,11 +236,11 @@ class App extends Component {
 
   render() {
 
-    const chunkSize = 8
-    var circleGroups = [];
-    while (this.state.circles.length) {
-      circleGroups.push(this.state.circles.splice(0, chunkSize));
-    }
+    //const chunkSize = 8
+    //var circleGroups = [];
+    //while (this.state.circles.length) {
+    //  circleGroups.push(this.state.circles.splice(0, chunkSize));
+    //}
     
     return (
       <div >
