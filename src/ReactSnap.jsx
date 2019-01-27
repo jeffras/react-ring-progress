@@ -23,10 +23,10 @@ export default class extends Component {
     }
 
     render() {
-        console.log('react snap')
+        const { classes } = this.props
         const { children, ...props } = this.props
         return (
-            <svg
+            <svg className={classes.reactSnap}
                 {...props}
                 ref={inst => {
                     if (inst) {
