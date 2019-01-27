@@ -16,6 +16,7 @@ import Brush from '@material-ui/icons/Brush'
 import Bubble from '@material-ui/icons/BubbleChart'
 import Build from '@material-ui/icons/Build'
 import Check from '@material-ui/icons/Check'
+import Close from '@material-ui/icons/Close'
 import Face from '@material-ui/icons/Face'
 import Map from '@material-ui/icons/Map'
 import MergeType from '@material-ui/icons/MergeType'
@@ -262,9 +263,28 @@ class App extends Component {
                   </Select>
                 </FormControl>
               </Grid>
-              <Grid item>
+              <Grid item className={classes.toggle}>
                   <div className={classes.animateLabel}>
                     Animate
+                  </div>
+                  <ToggleButtonGroup
+                    value={this.state.animate}
+                    exclusive
+                    onChange={(event, toggleValue) => {
+                      this.setState({ animate: toggleValue })
+                    }}
+                    >
+                    <ToggleButton value={true}>
+                      <Check />
+                    </ToggleButton>
+                    <ToggleButton value={false}>
+                      <Close />
+                    </ToggleButton>
+                  </ToggleButtonGroup>
+              </Grid>
+              <Grid item>
+                  <div className={classes.animateLabel}>
+                    Demo
                   </div>
                   <ToggleButtonGroup
                     value={this.state.demo}

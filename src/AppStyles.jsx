@@ -14,6 +14,7 @@ const styles = {
     margin: 20,
     minWidth: 160,
   },
+
   animateLabel: {
     'padding-top': '20px',
     'padding-bottom': '10px',
@@ -22,6 +23,10 @@ const styles = {
     'font-size': '12px',
     'font-family': '"Roboto", "Helvetica", "Arial", sans-serif',
     'line-height': 1,
+  },
+
+  toggle: {
+    'margin-right': '20px',
   }
 }
 
