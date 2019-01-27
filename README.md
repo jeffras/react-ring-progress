@@ -26,7 +26,7 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### USAGE
-
+```
 import RingProgress from 'RingProgress'
 ...
 const ringProgressProps = {
@@ -38,10 +38,11 @@ const ringProgressProps = {
   itemsPerRow: 3    // number of circles to display per row
 }
 <RingProgress {...ringProgressProps} classes={classes} />
-
+```
 ### API
 
 circles are defined as :
+```
   {
     activeFill: '#00295B',  // Color of the active portion of the donut
     passiveFill: '#DDD',    // Color of the passive portion of the donut
@@ -51,4 +52,4 @@ circles are defined as :
     fontSize: fontSize,     // font size of text
     percentage: 100         // percentage to fill the donut
   }
-  
+```  
